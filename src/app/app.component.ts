@@ -7,16 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular';
-  clear = 'AC';
-  addition = '+';
-  subtraction = '-';
-  multiply = '*';
-  equalto = '=';
-
-  inputValue: any;
-
-  getValue(event) {
-    var valueRecieved = event.target.value;
-    this.inputValue = valueRecieved;
-  }
 }

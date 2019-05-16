@@ -23,10 +23,21 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
+              "node_modules/@coreui/icons/css/coreui-icons.css",
+              "node_modules/flag-icon-css/css/flag-icon.css",
+              "node_modules/font-awesome/css/font-awesome.css",
+              "node_modules/simple-line-icons/css/simple-line-icons.css",
+              "src/styles.scss",
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": [],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "./node_modules"
+              ]
+            },
+            "scripts": [
+              "node_modules/chart.js/dist/Chart.min.js"
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {
@@ -81,10 +92,20 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.css",
+              "node_modules/flag-icon-css/css/flag-icon.css",
+              "node_modules/font-awesome/css/font-awesome.css",
+              "node_modules/simple-line-icons/css/simple-line-icons.css",
+              "src/styles.scss",
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/chart.js/dist/Chart.min.js"
+            ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "./node_modules"
+              ]
+            },
             "assets": [
               "src/favicon.ico",
               "src/assets"
